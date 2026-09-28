@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>토닥토닥 로스터리 | 청년자립도전사업단</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+	<link rel="stylesheet" th:href="@{/css/style.css}">
+</head>
+
+<body>
+
+	<div th:replace="~{fragments/header :: header}"></div>
+
+	<section class="roastery-banner text-white py-5 position-relative overflow-hidden">
+		<div class="hero-overlay"></div>
+		<div class="container py-5 text-center position-relative z-1">
+			<span class="badge bg-success px-3 py-2 fs-6 fw-bold mb-3">ROASTERY & CAFE</span>
+			<h1 class="display-5 fw-bold mb-3">토닥토닥 로스터리 사업장 소개</h1>
+			<p class="fs-5 opacity-90 max-w-700 mx-auto mb-0">
+				드립백 및 음료 제조, 원두 배달까지 청년들의 정성으로 만들어가는 공간입니다.
+			</p>
+		</div>
+	</section>
+
+	<section class="py-5 bg-white">
+		<div class="container py-3">
+			<div class="row align-items-center g-5 mb-5">
+				<div class="col-lg-6">
+					<div class="position-relative rounded-4 overflow-hidden shadow">
+						<img src="/images/storeinfo-roastery.png" class="img-fluid w-100 object-fit-cover"
+							alt="토닥토닥 로스터리 전경" style="min-height: 380px;">
+						<div class="position-absolute bottom-0 start-0 p-4 text-white gradient-overlay w-100">
+							<span class="badge bg-primary mb-2">원두 생산 & 매장</span>
+							<h4 class="fw-bold mb-0">카페 토닥토닥 로스터리</h4>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-6">
+					<span class="text-primary fw-bold fs-6">ABOUT STORE</span>
+					<h2 class="fw-bold display-6 mt-1 mb-4">정직한 원두와 따뜻한 음료를<br><span class="text-primary">전하는 특별한
+							카페</span></h2>
+					<p class="text-secondary fs-6 lh-lg mb-4">
+						토닥토닥 로스터리는 청년 자립 참여자들이 전문 기술을 익히며 원두 품질 관리와 음료 제조를 전담하는 실무 중심의 로스팅 사업장입니다.
+					</p>
+
+					<div class="p-4 rounded-4 bg-light border">
+						<ul class="list-unstyled mb-0">
+							<li class="d-flex align-items-start mb-3">
+								<i class="bi bi-geo-alt-fill text-primary fs-5 me-3"></i>
+								<div>
+									<strong class="d-block text-dark mb-1">사업장 위치</strong>
+									<span class="text-secondary small">경기 부천시 원미구 부흥로402번길 12</span>
+								</div>
+							</li>
+							<li class="d-flex align-items-start">
+								<i class="bi bi-clock-fill text-primary fs-5 me-3"></i>
+								<div>
+									<strong class="d-block text-dark mb-1">영업시간 및 라스트 오더</strong>
+									<span class="text-secondary small">오전 09:00 ~ 오후 18:00 <span
+											class="text-primary fw-semibold">(라스트 오더 17:00)</span></span>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<div class="pt-4 border-top">
+				<div class="text-center mb-4">
+					<span class="badge bg-primary-subtle text-primary px-3 py-2 rounded-pill fw-bold">OUR
+						BUSINESS</span>
+					<h3 class="fw-bold text-dark mt-2">로스터리 주요 업무</h3>
+				</div>
+				<div class="row g-4 justify-content-center">
+					<div class="col-lg-4 col-md-6">
+						<div class="bg-light p-4 rounded-4 border h-100">
+							<div class="d-flex align-items-center mb-3">
+								<div class="bg-primary text-white rounded-3 p-3 me-3 d-inline-flex align-items-center justify-content-center"
+									style="width: 48px; height: 48px;">
+									<i class="bi bi-box-seam-fill fs-5"></i>
+								</div>
+								<div>
+									<span class="text-primary fw-bold small d-block">SERVICE 01</span>
+									<h5 class="fw-bold text-dark mb-0">드립백 제작 & 포장</h5>
+								</div>
+							</div>
+							<p class="text-secondary small mb-0 lh-lg">
+								엄선된 원두를 정밀하게 분쇄하여 어디서나 손쉽게 즐길 수 있는 수제 드립백 상품을 직접 제조하고 위생적으로 포장합니다.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="bg-light p-4 rounded-4 border h-100">
+							<div class="d-flex align-items-center mb-3">
+								<div class="bg-primary text-white rounded-3 p-3 me-3 d-inline-flex align-items-center justify-content-center"
+									style="width: 48px; height: 48px;">
+									<i class="bi bi-cup-hot-fill fs-5"></i>
+								</div>
+								<div>
+									<span class="text-primary fw-bold small d-block">SERVICE 02</span>
+									<h5 class="fw-bold text-dark mb-0">음료 및 디저트 제조</h5>
+								</div>
+							</div>
+							<p class="text-secondary small mb-0 lh-lg">
+								신선한 에스프레소 음료와 계절 메뉴, 당일 제조하는 디저트까지 최상의 맛과 품질로 손님들에게 전합니다.
+							</p>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6">
+						<div class="bg-light p-4 rounded-4 border h-100">
+							<div class="d-flex align-items-center mb-3">
+								<div class="bg-primary text-white rounded-3 p-3 me-3 d-inline-flex align-items-center justify-content-center"
+									style="width: 48px; height: 48px;">
+									<i class="bi bi-truck fs-5"></i>
+								</div>
+								<div>
+									<span class="text-primary fw-bold small d-block">SERVICE 03</span>
+									<h5 class="fw-bold text-dark mb-0">원두 배달 및 판매</h5>
+								</div>
+							</div>
+							<p class="text-secondary small mb-0 lh-lg">
+								갓 볶아낸 로스팅 원두를 관내 유관 기관, 납품 매장 및 소비자에게 신속하고 안전하게 직배송합니다.
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-5">
+		<div class="container py-3">
+			<div class="row align-items-center g-5">
+				<!-- 좌측: 공정무역 메시지 및 특징 -->
+				<div class="col-lg-7">
+					<div class="d-flex align-items-center mb-2">
+						<i class="bi bi-globe-americas text-success fs-4 me-2"></i>
+						<span class="text-success fw-bold fs-6">FAIR TRADE COFFEE</span>
+					</div>
+					<h2 class="fw-bold text-dark display-6 mb-3">가치 있는 소비,<br><span class="text-primary">공정무역 인증
+							원두</span>를 사용합니다</h2>
+					<p class="text-secondary lh-lg mb-4">
+						토닥토닥 로스터리는 저개발국 농가에 정당한 가격을 지급하여 생산자의 자립을 돕는 <strong>공정무역(Fair Trade) 인증 원두</strong>만을 고집합니다. 한
+						잔의 커피로 시작되는 윤리적 소비가 지역사회와 지구 반대편 모두에게 건강한 변화를 만들어냅니다.
+					</p>
+
+					<div class="row g-3">
+						<div class="col-sm-6">
+							<div class="d-flex align-items-start p-3 bg-white rounded-3 border shadow-sm h-100">
+								<i class="bi bi-heart-fill text-danger fs-4 me-3 mt-1 flex-shrink-0"></i>
+								<div>
+									<strong class="d-block text-dark mb-1">정직하고 윤리적인 거래</strong>
+									<span class="text-secondary small">생산자에게 공정한 가격을 보장하여 지속 가능한 삶을 지원합니다.</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-6">
+							<div class="d-flex align-items-start p-3 bg-white rounded-3 border shadow-sm h-100">
+								<i class="bi bi-award-fill text-warning fs-4 me-3 mt-1 flex-shrink-0"></i>
+								<div>
+									<strong class="d-block text-dark mb-1">최상급 스페셜티 품질</strong>
+									<span class="text-secondary small">체계적인 품질 관리를 통해 뛰어난 풍미와 신선함을 유지합니다.</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-5">
+					<div class="position-relative rounded-4 overflow-hidden shadow">
+						<img src="/images/banner-roast.png" class="img-fluid w-100 object-fit-cover" alt="공정무역 원두 로스팅"
+							style="min-height: 360px;">
+						<div class="position-absolute top-0 end-0 m-3">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="py-5 bg-light" id="storeInfo">
+		<div class="container py-4">
+			<div class="text-center mb-5">
+				<span class="badge bg-primary px-3 py-2 fs-6 mb-2">STORE LOCATION</span>
+				<h2 class="fw-bold text-dark">카페 토닥토닥 매장안내</h2>
+				<p class="text-secondary">공정무역 원두와 정성을 담아 따뜻한 휴식을 전하는 지역 사회적 카페입니다.</p>
+			</div>
+			<div class="row g-4">
+				<div class="col-md-6 col-lg-4">
+					<div
+						class="card h-100 border-0 shadow-sm store-card overflow-hidden border-primary border-top border-4">
+						<div class="store-img-wrapper">
+							<img src="/images/storeinfo-roastery.png" class="card-img-top store-img" alt="토닥토닥 로스터리">
+							<span class="badge bg-primary position-absolute top-0 start-0 m-3 px-3 py-2">토닥토닥
+								로스터리</span>
+						</div>
+						<div class="card-body p-4 d-flex flex-column">
+							<h4 class="fw-bold mb-3">토닥토닥 로스터리</h4>
+							<ul class="list-unstyled text-secondary mb-4 small flex-grow-1">
+								<li class="mb-2 d-flex align-items-start">
+									<i class="bi bi-geo-alt-fill text-primary me-2"></i>
+									<span>부천시 소사구 경인로224번길 36</span>
+								</li>
+								<li class="mb-2 d-flex align-items-center">
+									<i class="bi bi-telephone-fill text-primary me-2"></i>
+									<span>032-654-9946</span>
+								</li>
+								<li class="d-flex align-items-center">
+									<i class="bi bi-clock-fill text-primary me-2"></i>
+									<span>평일 09:00 ~ 18:00 (원두 로스팅/납품)</span>
+								</li>
+							</ul>
+							<a href="https://map.kakao.com/" target="_blank"
+								class="btn btn-primary w-100 fw-semibold rounded-pill">
+								<i class="bi bi-map me-1"></i> 길찾기
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div th:replace="~{fragments/footer :: footer}"></div>a
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+.hero-slide {
+	height: 520px;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.menu-slide {
+	min-height: 480px;
+	height: 60vh;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+
+.slide-about {
+	background-image: url('/images/banner-teamwork.webp');
+}
+
+.slide-roastery {
+	background-image: url('/images/banner-roastery.webp');
+}
+
+.slide-lab {
+	background-image: url('/images/banner-roast.webp');
+}
+
+.slide-stories {
+	background-image: url('/images/banner-grow.webp');
+}
+
+.about-banner {
+	background-image: url('/images/banner-about.webp');
+}
+.awards-banner {
+	background-image: url('/images/banner-awards.webp');
+}
+
+.roastery-banner {
+	background-image: url('/images/banner-roastery.webp');
+}
+
+.roasting-banner {
+	background-image: url('/images/banner-roast.webp');
+}
+
+.about-banner,
+.awards-banner,
+.roasting-banner,
+.roastery-banner {
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: relative;
+	min-height: 360px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.awards-timeline {
+	position: relative;
+	padding-left: 2rem;
+	border-left: 3px solid #e9ecef;
+}
+
+.awards-timeline-item {
+	position: relative;
+	margin-bottom: 3.5rem;
+	display: flex;
+	align-items: center;
+}
+
+.awards-timeline-item:last-child {
+	margin-bottom: 0;
+}
+
+.awards-timeline-badge {
+	position: absolute;
+	left: -3rem;
+	top: 50%;
+	/* 카드의 세로 50% 위치로 이동 */
+	transform: translateY(-50%);
+	/* 뱃지 자신의 높이 절반만큼 위로 올려 정확히 중앙에 맞춤 */
+	width: 2.5rem;
+	height: 2.5rem;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: #fff;
+	z-index: 2;
+	box-shadow: 0 0 0 4px #fff;
+}

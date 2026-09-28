@@ -1,0 +1,129 @@
+:root {
+	--primary-color: #0056b3;
+	--coffee-color: #6F4E37;
+	--coffee-hover-color: #352113;
+	--gold-color: #d4af37;
+	--gold-text-color: #b8860b;
+	--gold-border-color: #f1e5ac;
+	--text-main-color: #333333;
+}
+
+body {
+	font-family: 'Pretendard', -apple-system, BlinkMacSystemFont, system-ui, Roboto, sans-serif;
+	color: var(--text-main-color);
+}
+
+.text-primary {
+	color: var(--primary-color) !important;
+}
+
+.bg-primary,
+.btn-primary {
+	background-color: var(--primary-color) !important;
+	border-color: var(--primary-color) !important;
+}
+
+.btn-outline-primary {
+	color: var(--primary-color);
+	border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+	background-color: var(--primary-color);
+	color: #ffffff;
+}
+
+.bg-coffee {
+	background-color: var(--coffee-color) !important;
+	color: #ffffff !important;
+}
+
+.text-coffee {
+	color: var(--coffee-color) !important;
+}
+
+.btn-coffee {
+	background-color: var(--coffee-color) !important;
+	border-color: var(--coffee-color) !important;
+	color: #ffffff !important;
+}
+
+.btn-coffee:hover {
+	background-color: var(--coffee-hover-color) !important;
+	border-color: var(--coffee-hover-color) !important;
+	color: #ffffff !important;
+}
+
+.bg-gold {
+	background-color: var(--gold-color) !important;
+	color: #ffffff !important;
+}
+
+.text-gold {
+	color: var(--gold-text-color) !important;
+}
+
+.border-gold {
+	border-color: var(--gold-border-color) !important;
+}
+
+.max-w-280 {
+	max-width: 280px;
+}
+
+.max-w-700 {
+	max-width: 700px;
+}
+
+.micro-text {
+	font-size: 0.825rem;
+}
+
+.extra-small {
+	font-size: 0.75rem;
+}
+
+.icon-circle {
+	width: 48px;
+	height: 48px;
+	min-width: 48px;
+	min-height: 48px;
+	flex: 0 0 48px;
+	border: none;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	box-sizing: border-box;
+}
+
+.icon-box-lg {
+	width: 48px;
+	height: 48px;
+}
+
+.img-h-300 {
+	height: 300px;
+}
+
+.img-h-380 {
+	min-height: 380px;
+}
+
+/* 2. SVG 자체 내부 width/height 속성을 덮어쓰는 로고 제한 */
+img.brand-logo-fairtrade {
+	height: 22px;
+	max-height: 22px;
+	width: auto;
+	max-width: 100%;
+	object-fit: contain;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+@media (min-width: 768px) {
+	.col-md-2-4 {
+		flex: 0 0 auto;
+		width: 20%;
+	}
+}

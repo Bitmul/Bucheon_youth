@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="ko">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>청년자립도전사업단</title>
+	<th:block th:replace="~{fragments/cssloader :: css-links}"></th:block>
+</head>
+
+<body>
+
+	<div th:replace="~{fragments/header :: header}"></div>
+
+	<section id="menuCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+		<div class="carousel-indicators">
+			<button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="0" class="active"></button>
+			<button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="1"></button>
+			<button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="2"></button>
+			<button type="button" data-bs-target="#menuCarousel" data-bs-slide-to="3"></button>
+		</div>
+
+		<div class="carousel-inner">
+			<div class="carousel-item active menu-slide slide-about">
+				<div class="hero-overlay"></div>
+				<div class="container carousel-caption text-start">
+					<span class="badge bg-primary px-3 py-2 mb-3">ABOUT US</span>
+					<h1 class="display-4 fw-bold mb-3">사업단 소개</h1>
+					<p class="fs-5 mb-4">경기부천나눔지역자활센터 산하 청년자립도전사업단입니다.</p>
+					<a th:href="@{/about}" class="btn btn-light btn-lg fw-bold rounded-pill px-4 text-primary">자세히 보기
+						&rarr;</a>
+				</div>
+			</div>
+
+			<div class="carousel-item menu-slide slide-roastery">
+				<div class="hero-overlay"></div>
+				<div class="container carousel-caption text-start">
+					<span class="badge bg-success px-3 py-2 mb-3">CAFE</span>
+					<h1 class="display-4 fw-bold mb-3">로스터리 매장</h1>
+					<p class="fs-5 mb-4">청년들이 정성껏 내린 음료와 따뜻한 소통이 있는 활기찬 카페 공간입니다.</p>
+					<a th:href="@{/roastery}" class="btn btn-light btn-lg fw-bold rounded-pill px-4 text-success">매장 안내
+						&rarr;</a>
+				</div>
+			</div>
+
+			<div class="carousel-item menu-slide slide-lab">
+				<div class="hero-overlay"></div>
+				<div class="container carousel-caption text-start">
+					<span class="badge bg-coffee px-3 py-2 mb-3">ROASTING LAB</span>
+					<h1 class="display-4 fw-bold mb-3">로스팅 랩</h1>
+					<p class="fs-5 mb-4">원두 로스팅 및 납품, 품질 관리를 담당합니다.</p>
+					<a th:href="@{/roasting-lab}" class="btn btn-light btn-lg fw-bold rounded-pill px-4 text-coffee">작업장
+						안내
+						&rarr;</a>
+				</div>
+			</div>
+
+			<div class="carousel-item menu-slide slide-stories">
+				<div class="hero-overlay"></div>
+				<div class="container carousel-caption text-start">
+					<span class="badge bg-gold text-dark px-3 py-2 mb-3">AWARDS</span>
+					<h1 class="display-4 fw-bold mb-3">자립 우수사례</h1>
+					<p class="fs-5 mb-4">청년자립도전사업단의 수상 성과와 우수사례를 확인해 보세요.</p>
+					<a th:href="@{/awards}" class="btn btn-light btn-lg fw-bold rounded-pill px-4 text-gold">우수사례 보기
+						&rarr;</a>
+				</div>
+			</div>
+		</div>
+
+		<button class="carousel-control-prev" type="button" data-bs-target="#menuCarousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Previous</span>
+		</button>
+
+		<button class="carousel-control-next" type="button" data-bs-target="#menuCarousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon" aria-hidden="true"></span>
+			<span class="visually-hidden">Next</span>
+		</button>
+	</section>
+
+	<section class="py-5" id="storeInfo">
+		<div class="container py-4">
+			<div class="text-center mb-5">
+				<span class="badge bg-primary px-3 py-2 fs-6 mb-2">ABOUT US</span>
+				<h2 class="fw-bold text-dark display-6">청년자립도전사업단 소개</h2>
+				<p class="text-secondary fs-5 mt-2">
+					초기 적응부터 직무 역량 강화, 일경험까지 맞춤형 단계별 자립을 함께합니다.
+				</p>
+			</div>
+			<div class="row g-4 align-items-center justify-content-center mb-5">
+				<div class="col-lg-5">
+					<img src="/images/banner-aboutus.webp" class="img-fluid rounded-4 w-100 object-fit-cover shadow-sm"
+						alt="청년자립도전사업단 현장">
+				</div>
+				<div class="col-lg-7 ps-lg-5">
+					<h3 class="fw-bold text-dark mb-3">청년의 특성에 맞춘 단계별 자립 지원</h3>
+					<p class="text-secondary fs-6">
+						만 18세~39세 자활근로 참여 청년을 대상으로 최대 3년간 체계적인 역량 강화를 제공합니다,<br class="d-none d-md-block">
+						1:1 맞춤형 심리 상담부터 자격증 취득 지원(최대 300만원),<br class="d-none d-md-block">
+						인턴 및 사업단 매장 운영을 통한 실전 취·창업 연계까지 전 과정을 지원합니다.
+					</p>
+					<div class="row g-3">
+						<div class="col-sm-4 text-center text-sm-start">
+							<div class="d-flex align-items-center mb-2 justify-content-center justify-content-sm-start">
+								<i class="bi bi-award-fill text-primary fs-4 me-2"></i>
+								<h6 class="fw-bold text-dark mb-0">역량강화비 지원</h6>
+							</div>
+							<p class="text-secondary small mb-0">자격증·교육비 최대 300만 원</p>
+						</div>
+
+						<div class="col-sm-4 text-center text-sm-start">
+							<div class="d-flex align-items-center mb-2 justify-content-center justify-content-sm-start">
+								<i class="bi bi-heart-pulse-fill text-primary fs-4 me-2"></i>
+								<h6 class="fw-bold text-dark mb-0">심리·정서 상담</h6>
+							</div>
+							<p class="text-secondary small mb-0">1:1 맞춤 상담 (최대 10회)</p>
+						</div>
+
+						<div class="col-sm-4 text-center text-sm-start">
+							<div class="d-flex align-items-center mb-2 justify-content-center justify-content-sm-start">
+								<i class="bi bi-briefcase-fill text-primary fs-4 me-2"></i>
+								<h6 class="fw-bold text-dark mb-0">일경험 & 취·창업</h6>
+							</div>
+							<p class="text-secondary small mb-0">자립 목표별 맞춤 연계</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pt-4">
+				<div class="row g-3 text-center justify-content-center">
+					<div class="col-md-4">
+						<div class="p-3 bg-white rounded-3 border">
+							<span class="badge bg-info mb-2">STEP 01</span>
+							<h6 class="fw-bold text-dark mb-1">청년형 Gateway</h6>
+							<p class="text-secondary micro-text mb-0">초기 적응,심리·정서상태 점검 및 집중상담, IAP 수립</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="p-3 bg-white rounded-3 border">
+							<span class="badge bg-primary mb-2">STEP 02</span>
+							<h6 class="fw-bold text-dark mb-1">임파워먼트 Ⅰ</h6>
+							<p class="text-secondary micro-text mb-0">자립계획 수립 및 직무·기초역량 강화를 위한 교육·훈련 중심단계</p>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="p-3 bg-white rounded-3 border">
+							<span class="badge bg-success mb-2">STEP 03</span>
+							<h6 class="fw-bold text-dark mb-1">임파워먼트 Ⅱ</h6>
+							<p class="text-secondary micro-text mb-0">자립계획에 기반한 일경험·근로활동을 통한 자립계획 실행단계</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="py-5 bg-light">
+		<div class="container py-4">
+			<div class="text-center mb-5">
+				<span class="badge bg-gold px-3 py-2 rounded-pill fw-bold mb-2">AWARDS</span>
+				<h2 class="fw-bold text-dark display-6">사업단 주요 수상 성과</h2>
+				<p class="text-secondary max-w-2xl mx-auto mt-2 mb-0">
+					경기부천나눔지역자활센터 청년자립도전사업단은 매년 우수한 자립 성과와<br class="d-none d-md-block">
+					체계적인 사업단 운영 역량을 인정받아 전국 우수사례로 선정되고 있습니다.
+				</p>
+			</div>
+
+			<!-- 3개 수상이력을 카드 형태로 3열 배치 -->
+			<div class="row g-4 justify-content-center">
+
+				<!-- 2025년 -->
+				<div class="col-md-4">
+					<div
+						class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center position-relative overflow-hidden">
+						<div
+							class="badge bg-gold-subtle text-gold fw-bold align-self-center px-3 py-1 rounded-pill mb-3">
+							2025년</div>
+						<div class="my-2">
+							<i class="bi bi-trophy-fill text-gold fs-1"></i>
+						</div>
+						<h4 class="fw-bold text-dark mt-2 mb-1">우수상</h4>
+						<p class="text-secondary small mb-0">전국 우수사례 공모전</p>
+					</div>
+				</div>
+
+				<!-- 2024년 -->
+				<div class="col-md-4">
+					<div
+						class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center position-relative overflow-hidden">
+						<div
+							class="badge bg-gold-subtle text-gold fw-bold align-self-center px-3 py-1 rounded-pill mb-3">
+							2024년</div>
+						<div class="my-2">
+							<i class="bi bi-trophy-fill text-gold fs-1"></i>
+						</div>
+						<h4 class="fw-bold text-dark mt-2 mb-1">최우수상</h4>
+						<p class="text-secondary small mb-0">전국 우수사례 공모전</p>
+					</div>
+				</div>
+
+				<!-- 2023년 -->
+				<div class="col-md-4">
+					<div
+						class="card h-100 border-0 shadow-sm rounded-4 p-4 text-center position-relative overflow-hidden">
+						<div
+							class="badge bg-gold-subtle text-gold fw-bold align-self-center px-3 py-1 rounded-pill mb-3">
+							2023년</div>
+						<div class="my-2">
+							<i class="bi bi-trophy-fill text-gold fs-1"></i>
+						</div>
+						<h4 class="fw-bold text-dark mt-2 mb-1">최우수상</h4>
+						<p class="text-secondary small mb-0">전국 우수사례 공모전</p>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="py-5 border-top" id="footer-message">
+		<div class="mt-5 p-4 p-md-5 text-center">
+			<h4 class="fw-bold text-dark mb-3">🌱 청년자립도전사업단은 여러분의 꿈을 응원합니다</h4>
+			<p class="text-secondary fs-6 mb-0">
+				안정적인 작업장에서 기본적인 근로 습관, 소통 능력, 책임감을 기르며<br class="d-none d-md-block">
+				자격증 취득 및 1:1 진로 상담을 통해 원하는 모든 분야로의 사회 진출을 지원합니다.
+			</p>
+		</div>
+	</section>
+
+	<section class="py-4 border-top">
+		<div class="container">
+			<div id="logoCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+				<div class="carousel-inner">
+
+					<div class="carousel-item active">
+						<div class="d-flex justify-content-center align-items-center gap-4 gap-md-5 flex-wrap py-2">
+							<div class="logo-item">
+								<img src="/images/logo-bucheonnanum.webp" alt="경기부천나눔지역자활센터" class="img-fluid logo-img">
+							</div>
+							<div class="logo-item">
+								<img src="/images/logo-bokji.webp" alt="보건복지부" class="img-fluid logo-img">
+							</div>
+							<div class="logo-item">
+								<img src="/images/logo-bokjidevelop.webp" alt="한국자활복지개발원" class="img-fluid logo-img">
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<button class="carousel-control-prev logo-control" type="button" data-bs-target="#logoCarousel"
+					data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+				</button>
+				<button class="carousel-control-next logo-control" type="button" data-bs-target="#logoCarousel"
+					data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+				</button>
+			</div>
+		</div>
+	</section>
+
+	<div th:replace="~{fragments/footer :: footer}"></div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
